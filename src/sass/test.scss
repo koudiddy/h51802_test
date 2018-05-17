@@ -1,0 +1,39 @@
+$w:100px;
+$color:red;
+$h:100px;
+
+@import "style";
+
+.container{
+    width: $w*3;
+    height: $h*2;
+    background: $color;
+    
+    h1,h2,h3{
+        font-size: 30px;
+        span{
+            color: yellow;
+        }
+    }
+}
+
+
+@mixin box{
+    background: #300;
+    padding: 5px;
+    margin: 10px;
+    height:$h*3;
+}
+.test1{
+    @include box;
+    width: $w*2;
+}
+.test2{
+    @include box;
+    width: $w*3;
+    display: inline-block;
+}
+
+.test3{
+    @extend .test2;
+}

@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; }
+
+.container { width: 300px; height: 200px; background: red; }
+
+.container h1, .container h2, .container h3 { font-size: 30px; }
+
+.container h1 span, .container h2 span, .container h3 span { color: yellow; }
+
+.test1 { background: #300; padding: 5px; margin: 10px; height: 300px; width: 200px; }
+
+.test2, .test3 { background: #300; padding: 5px; margin: 10px; height: 300px; width: 300px; display: inline-block; }
